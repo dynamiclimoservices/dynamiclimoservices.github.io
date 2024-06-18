@@ -1,0 +1,637 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes staticAnim {
+  0% {
+    transform: translateY(-30vh) translateX(-30vw);
+  }
+  33% {
+    transform: translateY(-10vh) translateX(-90vw);
+  }
+  66% {
+    transform: translateY(-50vh) translateX(-80vw);
+  }
+  100% {
+    transform: translateY(-10vh) translateX(-50vw);
+  }
+}
+
+@keyframes slideFade {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+:root {
+    --spacing: 7px;
+    --scale-increment: 0.01;
+    --scale-start: 0.7;
+    --top-start: -200px;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0d0d0d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.singleSwoop:nth-child(1) {
+    top: calc(var(--top-start) + var(--spacing) * 1);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 1)) scaleX(2);
+}
+
+.singleSwoop:nth-child(2) {
+    top: calc(var(--top-start) + var(--spacing) * 2);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 2)) scaleX(2);
+}
+
+.singleSwoop:nth-child(3) {
+    top: calc(var(--top-start) + var(--spacing) * 3);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 3)) scaleX(2);
+}
+
+.singleSwoop:nth-child(4) {
+    top: calc(var(--top-start) + var(--spacing) * 4);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 4)) scaleX(2);
+}
+
+.singleSwoop:nth-child(5) {
+    top: calc(var(--top-start) + var(--spacing) * 5);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 5)) scaleX(2);
+}
+
+.singleSwoop:nth-child(6) {
+    top: calc(var(--top-start) + var(--spacing) * 6);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 6)) scaleX(2);
+}
+
+.singleSwoop:nth-child(7) {
+    top: calc(var(--top-start) + var(--spacing) * 7);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 7)) scaleX(2);
+}
+
+.singleSwoop:nth-child(8) {
+    top: calc(var(--top-start) + var(--spacing) * 8);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 8)) scaleX(2);
+}
+
+.singleSwoop:nth-child(9) {
+    top: calc(var(--top-start) + var(--spacing) * 9);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 9)) scaleX(2);
+}
+
+.singleSwoop:nth-child(10) {
+    top: calc(var(--top-start) + var(--spacing) * 10);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 10)) scaleX(2);
+}
+
+.singleSwoop:nth-child(11) {
+    top: calc(var(--top-start) + var(--spacing) * 11);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 11)) scaleX(2);
+}
+
+.singleSwoop:nth-child(12) {
+    top: calc(var(--top-start) + var(--spacing) * 12);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 12)) scaleX(2);
+}
+
+.singleSwoop:nth-child(13) {
+    top: calc(var(--top-start) + var(--spacing) * 13);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 13)) scaleX(2);
+}
+
+.singleSwoop:nth-child(14) {
+    top: calc(var(--top-start) + var(--spacing) * 14);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 14)) scaleX(2);
+}
+
+.singleSwoop:nth-child(15) {
+    top: calc(var(--top-start) + var(--spacing) * 15);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 15)) scaleX(2);
+}
+
+.singleSwoop:nth-child(16) {
+    top: calc(var(--top-start) + var(--spacing) * 16);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 16)) scaleX(2);
+}
+
+.singleSwoop:nth-child(17) {
+    top: calc(var(--top-start) + var(--spacing) * 17);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 17)) scaleX(2);
+}
+
+.singleSwoop:nth-child(18) {
+    top: calc(var(--top-start) + var(--spacing) * 18);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 18)) scaleX(2);
+}
+
+.singleSwoop:nth-child(19) {
+    top: calc(var(--top-start) + var(--spacing) * 19);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 19)) scaleX(2);
+}
+
+.singleSwoop:nth-child(20) {
+    top: calc(var(--top-start) + var(--spacing) * 20);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 20)) scaleX(2);
+}
+
+.singleSwoop:nth-child(21) {
+    top: calc(var(--top-start) + var(--spacing) * 21);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 21)) scaleX(2);
+}
+
+.singleSwoop:nth-child(22) {
+    top: calc(var(--top-start) + var(--spacing) * 22);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 22)) scaleX(2);
+}
+
+.singleSwoop:nth-child(23) {
+    top: calc(var(--top-start) + var(--spacing) * 23);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 23)) scaleX(2);
+}
+
+.singleSwoop:nth-child(24) {
+    top: calc(var(--top-start) + var(--spacing) * 24);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 24)) scaleX(2);
+}
+
+.singleSwoop:nth-child(25) {
+    top: calc(var(--top-start) + var(--spacing) * 25);
+    transform: scaleY(calc(var(--scale-start) + var(--scale-increment) * 25)) scaleX(2);
+}
+
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-top: 4px solid #ffffff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spinner 1s linear infinite;
+}
+
+.slideText {
+    display: inline-block;
+    animation: slideFade 1s ease forwards;
+    opacity: 0;
+}
+
+.slideText:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.slideText:nth-child(2) {
+    animation-delay: 0.25s;
+}
+
+.slideText:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: #0d0d0d;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.callText{
+  font-family: 'Playfair Display', serif;
+  font-size: 5em;
+  color: #ffffff;
+  justify-self: center;
+  text-align: center;
+  margin-top: 200px;
+  margin: 20px;
+  margin-bottom: 10px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 100vw;
+  min-width: 470px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  font-family: "Playfair Display", serif;
+  z-index: 10;
+}
+
+.headerItem{
+  display: flex;
+  height: 40px;
+  align-items: center;
+  font-size: 15pt;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.orderNow {
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+.offerings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 40px 0;
+  color: white;
+}
+
+.offeringPanel {
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-color: #282828;
+}
+
+.offeringImg {
+  width: 100%;
+  height: auto;
+}
+
+.offeringDetails {
+  padding: 20px;
+  text-align: center;
+}
+
+.offeringDetails h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .offeringPanel {
+    width: 100%;
+  }
+}
+
+.orderNowWrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.orderNowButton {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 20px;
+  color: #fff;
+  background-color:#101c11;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.orderNowButton:hover {
+  background-color: #304d33;
+}
+
+
+.separator {
+    width: 80%;
+    height: 2px;
+    background-color: #e0e0e0;
+    margin: 20px auto;
+    border: 0;
+    border-top: 2px solid #ccc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.imageShowcase {
+  position: relative;
+  width: 80vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  margin: 15vw auto;
+  transition: transform 0.3s ease;
+}
+
+.imageShowcase:hover {
+  transform: scale(1.1);
+}
+
+.cardWrapper {
+  position: absolute;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+}
+
+.cardImg {
+  width: 20vw;
+  height: 30vw;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+  object-fit: cover;
+}
+
+.aboutContent {
+  margin: 40px;
+  padding: 20px;
+  color: white;
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
+}
+
+.aboutContent h1, .aboutContent h2 {
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.aboutContent p, .aboutContent ul {
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.imageShowcase .cardWrapper:nth-child(1) {
+  transform: rotate(-10deg) translateX(-22.5vw); 
+}
+
+.imageShowcase .cardWrapper:nth-child(2) {
+  transform: rotate(-5deg) translateX(-7.5vw);
+}
+
+.imageShowcase .cardWrapper:nth-child(3) {
+  transform: rotate(5deg) translateX(7.5vw);
+}
+
+.imageShowcase .cardWrapper:nth-child(4) {
+  transform: rotate(10deg) translateX(22.5vw);
+}
+
+.cardWrapper:hover {
+  z-index: 10;
+}
+
+.cardImg:hover {
+  transform: scale(1.2);
+}
+
+.imageShowcase:hover .cardWrapper:nth-child(1):not(:hover) .cardImg {
+  transform: scale(1.1);
+}
+
+.imageShowcase:hover .cardWrapper:nth-child(2):not(:hover) .cardImg {
+  transform: scale(1.1);
+}
+
+.imageShowcase:hover .cardWrapper:nth-child(3):not(:hover) .cardImg {
+  transform: scale(1.1);
+}
+
+.imageShowcase:hover .cardWrapper:nth-child(4):not(:hover) .cardImg {
+  transform: scale(1.1);
+}
+
+.headerItem, .mobileHeaderItem {
+  color: inherit;
+  text-decoration: none;
+}
+
+.headerItem:visited, .mobileHeaderItem:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.headerItem:hover{
+  text-decoration: underline;
+}
+
+.dlsLogo{
+  width: 40px;
+}
+
+.logoText{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: min-content;
+  height: min-content;
+  font-size: 20pt;
+}
+
+.mainTitle{
+  font-size: 8vw;
+  font-weight: 500;
+  letter-spacing: 3vw;
+  color: white; 
+  margin: 40px;
+  margin-top: 100px;
+}
+
+.contactContent {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  font-family: 'Playfair Display', serif;
+}
+
+.contactContent h1, .contactContent h2 {
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+.contactContent p {
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+.contactContent a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contactContent a:hover {
+  text-decoration: underline;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.instagramLink {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.instagramLink:hover img {
+  transform: scale(1.2);
+}
+
+
+#swoop{
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.singleSwoop{
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  z-index: -1;
+}
+
+.static{
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 200vw;
+  min-height: 200vh;
+  opacity: 0.03;
+  z-index: -1;
+  filter: blur(1px);
+  animation: staticAnim 1s steps(7) 0s infinite;
+}
+
+.staticContainer{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.mainContent{
+  display: none;
+  width: 100vw;
+}
+
+.menuToggle{
+  display: none;
+  width: 100vw;
+  height: 50px;
+  color: white;
+  font-size: 20pt;
+  text-align: center;
+}
+
+.hamburger{
+  transform: scaleX(3);
+  cursor: pointer;
+}
+
+.mobileHeaderItem{
+  display: none;
+}
+
+.mobileNav{
+  display: none;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .header{
+    display: none;
+  }
+
+  .mobileHeaderItem.dlsLogo{
+    transform: scale(2);
+  }
+
+  .mobileHeaderItem:hover{
+    text-decoration: underline;
+  }
+
+  .menuToggle{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mainTitle{
+    text-align: center;
+    font-size: 10vw;
+  }
+
+  .mobileHeaderItem{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    font-size: 20pt;
+    cursor: pointer;
+  }
+
+  .mobileNavList{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    margin-top: 0px;
+    height: calc(100vh - 150px);
+  }
+
+  .mobileNav{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: calc( 100vh - 100px );
+    position: fixed;
+    top: calc(-100vh + 150px);
+    left: 0;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    font-family: "Playfair Display", serif;
+  }
+}
